@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta content="NES POS" name="description">
-        <title>OpeCv Heroku Deploy</title>
-        <style>
-         #imageElement {
-             width: 1080px;
-             height: 601px;
-             background-color: #666;
-         }
-
-        </style>
+        <title>Face Emotion with CNN Model</title>
     </head>
     <body>
+        <h3>Face Emotion with CNN Model </h3>
         <div id="container">
-            <center><img id="imageElement" src="{{ url_for('video_feed') }}" ></center>
+            <img src="{{ url_for('video_feed') }}">
         </div>
 
     </body>
