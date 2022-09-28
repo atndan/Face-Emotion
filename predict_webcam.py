@@ -15,6 +15,7 @@ cap = cv2.VideoCapture(0)
 while True:
     # Find haar cascade to draw bounding box around face
     ret, frame = cap.read()
+    frame = cv2.flip(frame, 1)
     if not ret:
         break
     facecasc = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
