@@ -8,7 +8,7 @@ app = Flask(__name__)
 model = load_model('model.h5')
 
 # prevents openCL usage and unnecessary logging messages
-cv2.ocl.setUseOpenCL(False)
+# cv2.ocl.setUseOpenCL(False)
 
 # dictionary which assigns each label an emotion (alphabetical order)
 emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Sad", 5: "Surprise", 6: "Neutral",7: "Contempt"}
@@ -49,4 +49,4 @@ def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
