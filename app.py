@@ -14,8 +14,9 @@ model = load_model('model.h5')
 emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Sad", 5: "Surprise", 6: "Neutral",7: "Contempt"}
 # start the webcam feed
 
-cap = cv2.VideoCapture(0)
+
 def gen_frames():
+    cap = cv2.VideoCapture(0)
     while True:
         # Find haar cascade to draw bounding box around face
         ret, frame = cap.read()
