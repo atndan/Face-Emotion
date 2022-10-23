@@ -16,9 +16,7 @@ emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Sad", 
 
 
 def gen_frames():
-    cap = cv2.VideoCapture(0)
-    if not self.vid.isOpened():
-        return
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
     while True:
         # Find haar cascade to draw bounding box around face
         ret, frame = cap.read()
