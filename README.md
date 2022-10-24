@@ -11,5 +11,4 @@ Dataset FER of Microsoft.
 Convolutional Neural Network (CNN) 
 
 ## Demo
-
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/91353356/197457110-82dbf45d-27a2-4c26-9ab8-fbb10d4cf35b.png">
+<img width="748" alt="image" src="https://user-images.githubusercontent.com/91353356/197469232-c5b1e898-ae83-4559-97ff-cfa7d99f4143.png">
